@@ -1,43 +1,22 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int[] ans = {-1,-1};
-
-    // check for the first occurrence if target first
-     ans[0] = search(nums,target,true);
-     ans[1]= search(nums,target,false);
-
-     
-    return ans;
-    }
-
-    //this function just returns the index value of target
-    int search(int[] nums, int target, boolean findStartIndex){
+        int start = -1;
+        int end = -1;
         
-        int ans = -1;
-        int start = 0; 
-        int end = nums.length -1;
-
-        while(start<=end){
-            // find the middle elements 
-            int mid = start + (end -start )/2;
-            if(target<nums[mid]){
-                end = mid-1;
-            }
-            else if(target> nums[mid]){
-                start = mid +1;
-            }
-            else{ 
-                //potential ans found
-                ans = mid; 
-                if(findStartIndex ==true){
-                    end = mid-1;
-                }
-                else{
-                    start = mid+1;
-                }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                start = i;
+                break;
             }
         }
-        return ans;
+        
+        for (int j = nums.length - 1; j >= 0; j--) {
+            if (nums[j] == target) {
+                end = j;
+                break;
+            }
+        }
+        
+        return new int[]{start, end};
     }
-
 }
