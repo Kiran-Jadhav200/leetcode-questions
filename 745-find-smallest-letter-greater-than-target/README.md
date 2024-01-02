@@ -1,3 +1,4 @@
+
 <h2><a href="https://leetcode.com/problems/find-smallest-letter-greater-than-target">Find Smallest Letter Greater Than Target</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>You are given an array of characters <code>letters</code> that is sorted in <strong>non-decreasing order</strong>, and a character <code>target</code>. There are <strong>at least two different</strong> characters in <code>letters</code>.</p>
 
 <p>Return <em>the smallest character in </em><code>letters</code><em> that is lexicographically greater than </em><code>target</code>. If such a character does not exist, return the first character in <code>letters</code>.</p>
@@ -37,3 +38,25 @@
 	<li><code>letters</code> contains at least two different characters.</li>
 	<li><code>target</code> is a lowercase English letter.</li>
 </ul>
+<h1>Company</h1>
+<ol>
+  <li>Amazon</li>
+  <li>Bloomberg</li>
+  <li>ByteDance</li>
+  <li>Facebook</li>
+  <li>Google</li>
+  <li>Microsoft</li>
+  <li>Oracle</li>
+  <li>Uber</li>
+  <li>LinkedIn</li>
+  <li>Goldman Sachs</li>
+  <li>Adobe</li>
+  <li>Wipro</li>
+  <li>Amadeus Software</li>
+  <li>Ion Trading</li>
+  <li>Verifone</li>
+  <li>VMWare</li>
+  <li>Airtel</li>
+  <li>Qualys</li>
+  <li>Apptad Inc.</li>
+</ol>
