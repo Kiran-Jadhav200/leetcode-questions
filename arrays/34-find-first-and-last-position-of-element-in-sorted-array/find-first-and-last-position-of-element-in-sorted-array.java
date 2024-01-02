@@ -3,11 +3,10 @@ class Solution {
         int[] ans = {-1,-1};
 
     // check for the first occurrence if target first
-     int start = search(nums,target,true);
-     int end = search(nums,target,false);
+     ans[0] = search(nums,target,true);
+     ans[1]= search(nums,target,false);
 
-    ans[0] =start;
-    ans[1] = end;
+     
     return ans;
     }
 
