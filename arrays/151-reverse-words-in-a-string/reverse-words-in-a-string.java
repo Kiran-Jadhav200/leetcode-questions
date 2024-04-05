@@ -1,14 +1,13 @@
 class Solution {
     public String reverseWords(String s) {
-        //removes leading and trailing spaces
-        s = s.trim();
-        //split-> divide the string and puts element into array on the 
-        //delimiter condition
-       List<String>wordList =  Arrays.asList(s.split(" +"));
-      // System.out.println(wordList);
-       Collections.reverse(wordList);
-       //System.out.println(wordList);
-       return String.join(" ",wordList);
-        
+       String[] arr = s.split("\\s+");
+
+       StringBuilder sb = new StringBuilder();
+       for(int i =arr.length-1;i>0;i--){
+        sb.append(arr[i]);
+        sb.append(" ");
+       }
+       sb.append(arr[0]);
+       return sb.toString().trim();
     }
 }
